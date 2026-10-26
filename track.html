@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#1769aa"><title>ติดตามคำร้อง · Support Center</title><link rel="stylesheet" href="style.css?v=1.0"></head>
+<body class="inner-page">
+<header class="topbar"><div class="topbar-inner shell"><a href="index.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 64 64"><path d="M13 12h38a7 7 0 0 1 7 7v22a7 7 0 0 1-7 7H32L19 57v-9h-6a7 7 0 0 1-7-7V19a7 7 0 0 1 7-7Z"/><path d="M20 25h24M20 34h17"/></svg></span><span><b data-brand>Support Center</b><small>Customer Self Service</small></span></a><nav class="topnav"><a href="index.html">หน้าหลัก</a><a href="ticket.html">แจ้งปัญหา</a><a class="active" href="track.html">ติดตามคำร้อง</a></nav></div></header>
+<main class="track-main">
+  <section class="track-hero"><div class="track-card">
+    <span class="eyebrow">TRACK YOUR REQUEST</span><h1>ติดตามคำร้อง</h1><p>กรอก Ticket ID และ Email เดียวกับที่ใช้แจ้งปัญหา</p>
+    <form id="trackForm" class="track-form">
+      <label><span>Ticket ID</span><input id="trackTicketId" autocomplete="off" maxlength="40" required placeholder="เช่น SC-20261024-ABC123"></label>
+      <label><span>Email</span><input id="trackEmail" type="email" maxlength="160" required placeholder="name@example.com"></label>
+      <button class="btn primary" id="trackBtn" type="submit">ตรวจสอบสถานะ</button>
+    </form>
+    <div class="track-hint">Ticket ID จะได้รับหลังส่งคำร้องสำเร็จ หากหาไม่พบให้ตรวจสอบ Email และตัวอักษรของ Ticket ID อีกครั้ง</div>
+  </div></section>
+  <section class="shell track-result-wrap" id="trackResultWrap" hidden><div class="track-result" id="trackResult"></div></section>
+</main>
+<footer class="footer"><div class="shell footer-inner"><span>© <span id="year"></span> <b data-brand>Support Center</b></span><span>Customer Self Service</span></div></footer>
+<script src="config.js?v=1.0"></script><script src="common.js?v=1.0"></script><script src="track.js?v=1.0"></script></body></html>
