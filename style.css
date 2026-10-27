@@ -6,3 +6,74 @@
 /* legacy dummy auth */
 .legacy-login-body{margin:0;background:linear-gradient(#181c22 0 355px,#ddd 355px);font-family:Arial,Tahoma,sans-serif}.login-top{height:64px;background:#050505}.login-top-inner{width:890px;margin:auto;padding-top:17px;color:#078ff0;font-size:24px;font-style:italic;font-weight:bold}.login-shell{width:890px;height:454px;margin:auto;background:#eee}.login-strip{height:36px;background:#0874c9;color:#fff;padding:10px 17px;font-weight:bold}.login-white{width:650px;height:213px;background:#fff;margin:27px auto;padding:21px 14px}.login-white label{display:block;color:#666;margin-bottom:14px}.login-white input{display:block;width:320px;height:28px;border:1px solid #ddd;margin-top:6px}.login-green{width:240px;height:34px;background:#79cb09;color:#fff;border:0;font-weight:bold}.legacy-login-footer{text-align:center;margin-top:58px;color:#aaa;font-size:10px}
 @media(max-width:1080px){.top-black-inner,.legacy-wrap{width:94vw}.legacy-box{grid-template-columns:31% 69%}.center-area{max-width:90%}.legacy-content{min-width:0}.modern-nav-inner{width:94vw}.form-area,.notice-box,.review,.track-result{width:90%}}@media(max-width:720px){body{background:#ddd}.legacy-box{height:auto;min-height:650px;grid-template-columns:1fr}.legacy-side{padding:12px}.legacy-content{padding:15px}.center-area{margin-top:25px}.choice-row{flex-direction:column;align-items:center}.top-title{font-size:19px}.legacy-wrap,.top-black-inner{width:100%}.top-black-inner{padding:0 14px}.form-area,.notice-box,.review,.track-card,.track-result{width:96%}.form-table th{width:120px}.modern-card{width:92vw;margin-top:90px}.poster-grid{grid-template-columns:repeat(3,1fr)}.login-shell,.login-top-inner{width:100%}.login-white{width:90%}.meta{grid-template-columns:1fr}}
+
+
+/* ===== v1.3 source-faithful geometry ===== */
+:root{
+  --legacy-blue:#078bea;
+  --legacy-bg:#efefef;
+  --legacy-side:#e7e7e7;
+  --legacy-dark:#050505;
+}
+body{font-family:Arial,Tahoma,sans-serif;background:linear-gradient(#181c22 0 356px,#dedede 356px 100%)}
+.top-black{height:62px;background:#050505;border:0}
+.top-black-inner{width:1042px;padding:0 14px}
+.top-title{font-size:24px;line-height:62px;color:#078df0;font-weight:400;letter-spacing:-.35px}
+.legacy-wrap{width:1042px}
+.legacy-box{height:718px;border-top:6px solid #078bea;grid-template-columns:348px 694px;background:#efefef;box-shadow:none}
+.legacy-side{background:#e5e5e5;padding:21px 18px 18px}
+.legacy-side b{font-size:12px;line-height:1.35;margin:0 0 3px}
+.legacy-side span{font-size:11px;line-height:1.45;color:#666}
+.legacy-content{background:#f5f5f5;padding:20px 18px}
+.content-heading{height:31px;border-bottom:1px solid #dcdcdc;font-size:15px;line-height:19px;padding-top:1px}
+.subheading{font-size:12px;color:#6c6c6c;margin-top:6px}
+.center-area{width:428px;margin:48px auto 0}
+.choice-row{gap:26px}
+.choice{min-width:188px}
+.choice-title{font-size:13px;margin-bottom:10px;font-weight:400}
+.legacy-choice-btn{width:188px;height:36px;line-height:36px;font-size:13px;font-weight:400}
+.orange{background:#ff7600}.blue{background:#3d5fa8}.green{background:#7dcc0b}
+.content-rule{width:428px;margin-top:44px;border-color:#ddd}
+.flow-select{width:428px;height:31px;font-size:13px}
+.small-submit{margin-top:17px;padding:3px 8px;font-size:12px;background:#f2f2f2;border:1px solid #777}
+.legacy-footer{padding-top:18px;font-size:10px}
+.brand-word{font-size:13px;letter-spacing:2px}
+
+/* exact visual ratios from legacy game-login reference; still demo-only */
+.legacy-login-body{background:linear-gradient(#181c22 0 355px,#ddd 355px);min-height:100vh}
+.login-top{height:64px;background:#050505}
+.login-top-inner{width:890px;padding-top:17px;font-size:24px;color:#078ff0;font-style:italic;font-weight:bold}
+.login-shell{width:890px;height:454px;background:#eee}
+.login-strip{height:36px;padding:10px 17px;background:#0b76cb;font-size:12px}
+.login-white{width:650px;height:213px;margin:27px auto 0;padding:48px 14px 18px;position:relative}
+.login-safe-label{position:absolute;right:12px;top:8px;color:#a23b3b;font-size:9px;font-weight:bold;letter-spacing:.4px}
+.login-white label{font-size:12px;color:#666;margin:0 0 14px}
+.login-white input{width:320px;height:28px;margin-top:6px;border:1px solid #ddd;background:#fff;padding:4px 7px}
+.login-green{width:240px;height:34px;margin-top:-4px;background:#7dcb0b;font-size:12px}
+.legacy-login-footer{margin-top:58px}
+
+/* modern auth reference: Inter, narrow nav, white center card */
+.modern-body{font-family:Inter,Arial,Tahoma,sans-serif;background:#111}
+.modern-nav{height:47px;background:#16181e}
+.modern-nav-inner{width:1170px;height:47px}
+.modern-logo{font-size:13px;color:#f1f1f4;gap:9px;letter-spacing:2px}
+.modern-card{width:470px;min-height:555px;margin:144px auto 0;border-radius:8px;padding:30px 25px 55px;box-shadow:0 7px 25px #0006}
+.logo-center{display:flex;align-items:center;justify-content:center;gap:12px;font-size:27px;letter-spacing:3px;color:#2a2a66;font-weight:600}
+.modern-play-icon{width:42px;height:42px;border-radius:13px;background:linear-gradient(145deg,#22b8e4,#1464d7);position:relative;display:inline-block;transform:rotate(0deg)}
+.modern-play-icon:after{content:"";position:absolute;left:14px;top:10px;border-top:11px solid transparent;border-bottom:11px solid transparent;border-left:17px solid #dff8ff}
+.modern-card h2{font-size:22px;margin:22px 0 38px}
+.modern-safe-label{text-align:center;font-size:9px;color:#a23b3b;font-weight:700;letter-spacing:.45px;margin:-24px 0 20px}
+.modern-card label{font-size:13px;margin-bottom:18px}
+.modern-card input{height:50px;font-family:Inter,Arial,sans-serif;font-size:14px;background:#fafafa;border:1px solid #eeeeF2;border-radius:6px}
+.modern-login{height:48px;font-size:13px;background:#1597ee}
+.modern-links{font-size:12px;margin-top:24px}
+.cookie-mock{height:64px;bottom:12px;border-radius:0;background:#111e;padding:14px 14px;font-size:12px}
+.cookie-mock button{top:16px;min-width:162px}
+
+/* keep visual disclaimer clearly outside interactive credential fields */
+.test-ribbon{font-size:9px;padding:4px 8px;background:#a92323}
+
+@media(max-width:1080px){
+  .top-black-inner,.legacy-wrap{width:94vw}
+  .legacy-box{grid-template-columns:33.4% 66.6%}
+}
