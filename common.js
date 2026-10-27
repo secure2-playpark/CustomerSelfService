@@ -1,1 +1,9 @@
-(()=>{const C=window.SUPPORT_CONFIG||{};document.querySelectorAll("[data-brand]").forEach(el=>el.textContent=C.APP_NAME||"Support Center");document.querySelectorAll("#year").forEach(el=>el.textContent=new Date().getFullYear());const loader=document.querySelector("#pageLoader");if(loader)window.addEventListener("load",()=>setTimeout(()=>loader.classList.add("hide"),250));window.SUPPORT={config:C,escape:s=>String(s??"").replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c])),statusClass:s=>{s=String(s||"").toUpperCase();if(s==="RESOLVED")return"status-resolved";if(s==="CLOSED")return"status-closed";if(s==="IN_PROGRESS"||s==="WAITING")return"status-progress";return"status-open";},statusLabel:s=>({OPEN:"รับเรื่องแล้ว",IN_PROGRESS:"กำลังดำเนินการ",WAITING:"รอข้อมูลเพิ่มเติม",RESOLVED:"แก้ไขแล้ว",CLOSED:"ปิดคำร้อง"}[String(s||"").toUpperCase()]||String(s||"รับเรื่องแล้ว"))};})();
+(()=>{
+  const C=window.SUPPORT_CONFIG||{};
+  const esc=s=>String(s??"").replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]));
+  document.querySelectorAll('[data-app]').forEach(x=>x.textContent=C.APP_NAME||'Support Test Center');
+  document.querySelectorAll('[data-brand]').forEach(x=>x.textContent=C.BRAND_NAME||'SUPPORT LAB');
+  document.querySelectorAll('[data-game]').forEach(x=>x.textContent=C.GAME_NAME||'GAME PC');
+  document.querySelectorAll('[data-year]').forEach(x=>x.textContent=new Date().getFullYear());
+  window.SUPPORT={config:C,escape:esc,statusClass:s=>{s=String(s||'').toUpperCase();return s==='RESOLVED'?'resolved':s==='CLOSED'?'closed':(s==='IN_PROGRESS'||s==='WAITING')?'progress':'open';},statusLabel:s=>({OPEN:'รับเรื่องแล้ว',IN_PROGRESS:'กำลังดำเนินการ',WAITING:'รอข้อมูลเพิ่มเติม',RESOLVED:'แก้ไขแล้ว',CLOSED:'ปิดคำร้อง'}[String(s||'').toUpperCase()]||String(s||'รับเรื่องแล้ว'))};
+})();
